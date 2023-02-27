@@ -24,14 +24,16 @@
 
 @mixin button($bgColor, $display) {
 	background-color: $bgColor;
-	color: $white;
+	color: $black;
 	font-weight: $bold;
 	text-decoration: none;
 	padding: 1rem 3rem;
 	text-align: center;
 	margin-top: calc($separation / 2) 0;
 	display: $display;
+	border-radius: 7px;
 	border: none;
+	text-transform: uppercase;
 
 	&:hover {
 		background-color: darken($bgColor, 5);

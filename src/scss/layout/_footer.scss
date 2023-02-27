@@ -3,11 +3,11 @@
 	background-color: $darkGrey;
 	margin-bottom: 0;
 
-	.contenedor-footer {
+	.footer-container {
 		padding-top: calc($separation / 2) 0;
 	}
 
-	.navegacion {
+	.navegation {
 		visibility: visible;
 		opacity: 1;
 		height: auto;
@@ -16,5 +16,6 @@
 	.copyright {
 		color: $white;
 		text-align: center;
+		font-size: 14px;
 	}
 }

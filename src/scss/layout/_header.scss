@@ -1,23 +1,24 @@
-.no-webp .inicio {
-	background-image: url(../img/header.jpg);
+.no-webp .home {
+	background-image: url('../img/header.jpg');
 }
-.webp .inicio {
-	background-image: url(../img/header.webp);
+.webp .home {
+	background-image: url('../img/header.webp');
 }
 
 .header {
 	background-color: $darkGrey;
+	// background-image: url('../img/header.jpg');
 	padding: 1rem 0 3rem 0;
 
 	.navbar {
 		a {
 			img {
-				height: 80px;
+				height: 90px;
 			}
 		}
 	}
 
-	&.inicio {
+	&.home {
 		background-position: center center;
 		background-size: cover;
 
@@ -42,7 +43,9 @@
 		text-align: left;
 		color: $white;
 		font-weight: $bold;
-		line-height: 2;
-		max-width: 60rem;
+		font-size: 50px;
+		line-height: 1.5;
+		max-width: 56rem;
+		padding-bottom: 4rem;
 	}
 }

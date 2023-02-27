@@ -1,6 +1,6 @@
 @include tablet {
 	.ads-container {
-		@include grid(3, 2rem);
+		@include grid(3, 3rem);
 	}
 }
 
@@ -8,6 +8,11 @@
 	background-color: lighten($lightGrey, 5);
 	border: 1px solid darken($lightGrey, 10);
 	margin-bottom: 2rem;
+	border-radius: 10px;
+
+	img {
+		border-radius: 10px 10px 0 0;
+	}
 
 	.ads-content {
 		padding: 2rem;
@@ -16,30 +21,36 @@
 	h3,
 	p {
 		margin: 0;
+		text-align: center;
 	}
-}
-.price {
-	color: $green;
-	font-weight: $bold;
-	font-size: 3rem;
-}
 
-.icons-features {
-	display: flex;
-	list-style: none;
-	padding: 0;
-	max-width: 40rem;
+	p.price {
+		color: $green;
+		font-weight: $bold;
+		font-size: 3rem;
+		text-align: left;
+		margin-left: 2rem;
+	}
 
-	li {
-		flex: 1;
+	.icons-features {
 		display: flex;
+		justify-content: center;
+		list-style: none;
+		padding-left: 4rem;
+		margin: 2rem 0;
 
-		img {
-			flex: 0 0 3rem;
-			margin-right: 1rem;
-		}
-		p {
-			font-weight: $extraBold;
+		li {
+			flex: 1;
+			display: flex;
+
+			img {
+				height: 30px;
+				flex: 0 0 3rem;
+				margin-right: 1rem;
+			}
+			p {
+				font-weight: $extraBold;
+			}
 		}
 	}
 }

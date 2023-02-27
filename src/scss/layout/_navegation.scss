@@ -1,4 +1,4 @@
-.derecha {
+.right {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -23,7 +23,7 @@
 	}
 }
 
-.barra {
+.navbar {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -31,11 +31,11 @@
 	@include tablet {
 		flex-direction: row;
 		justify-content: space-between;
-		align-items: flex-end;
+		align-items: center;
 	}
 }
 
-.navegacion {
+.navegation {
 	visibility: hidden;
 	opacity: 0;
 	height: 0;
@@ -65,12 +65,12 @@
 		}
 
 		&:hover {
-			color: $green;
+			color: $yellow;
 		}
 	}
 }
 
-/** Menu de hamburguesa **/
+/** Hamburguer Menu **/
 .mobile-menu {
 	@include tablet {
 		display: none;
@@ -81,7 +81,7 @@
 	}
 }
 
-.mostrar {
+.show {
 	visibility: visible;
 	opacity: 1;
 	height: auto;

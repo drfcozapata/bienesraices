@@ -2,12 +2,13 @@
 	.inferior-section {
 		display: grid;
 		grid-template-columns: 2fr 1fr;
-		column-gap: 2rem;
+		column-gap: 4rem;
+		margin-bottom: 5rem;
 	}
 }
 
-.entrada-blog {
-	margin-bottom: 2rem;
+.blog-post {
+	margin-bottom: 3rem;
 
 	@include tablet {
 		display: grid;
@@ -19,29 +20,32 @@
 	}
 }
 
-.informacion-meta {
+.meta-information {
+	font-size: 15px;
 	span {
 		color: $yellow;
+		font-weight: $bold;
 	}
 }
 
-.texto-entrada {
+.post-text {
 	a {
 		color: $black;
 		margin-top: 2rem;
 		display: block;
+
 		@include tablet {
 			margin-top: 0;
 		}
 	}
 	h4 {
 		margin: 0;
-		line-height: 1.4;
+		line-height: 1;
 		&::after {
 			content: '';
 			display: block;
 			width: 15rem;
-			height: 0.5rem;
+			height: 0.4rem;
 			background-color: $green;
 			margin-top: 1rem;
 		}
