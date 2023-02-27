@@ -1,12 +1,17 @@
 .about-content {
+	padding: 0 2rem;
 	@include tablet {
-		@include grid(2, 2rem);
+		@include grid(2, 4rem);
+	}
+
+	.about-text blockquote {
+		font-weight: $extraBold;
+		font-size: 2.2rem;
+		margin: 0;
+		padding-left: 1rem 0 3rem 0;
 	}
 }
 
-.about-text blockquote {
-	font-weight: $extraBold;
-	font-size: 2.2rem;
-	margin: 3rem 0 0 0;
-	padding-left: 1rem 0 3rem 0;
+.more-about {
+	margin: 6rem 0;
 }

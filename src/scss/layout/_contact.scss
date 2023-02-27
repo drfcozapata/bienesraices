@@ -1,5 +1,11 @@
-.contact-image {
+.no-webp .contact-image {
 	background-image: url('../img/find.jpg');
+}
+.webp .contact-image {
+	background-image: url('../img/find.webp');
+}
+
+.contact-image {
 	background-position: center center;
 	background-size: cover;
 	padding: $separation * 2 0;
