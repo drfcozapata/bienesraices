@@ -54,3 +54,4 @@ function watchArchivos() {
 }
 
 exports.default = parallel(css, javascript, imagenes, watchArchivos);
+exports.build = parallel(css, javascript, imagenes);
