@@ -4,4 +4,32 @@
 
 .announce {
 	padding: 0 20rem;
+
+	.subtitle {
+		text-align: center;
+		font-size: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	.icons-features {
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		padding-left: 4rem;
+		margin: 2rem 0;
+
+		li {
+			flex: 1;
+			display: flex;
+
+			img {
+				height: 30px;
+				flex: 0 0 3rem;
+				margin-right: 1rem;
+			}
+			p {
+				font-weight: $extraBold;
+			}
+		}
+	}
 }

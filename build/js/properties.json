@@ -1,0 +1,92 @@
+[
+	{
+		"id": 1,
+		"titulo": "Casa de Lujo Moderna",
+		"subtitulo": "Casa de lujo, con extraordinario diseño vanguardista, a un excelente precio.",
+		"precio": "$3.000.000",
+		"habitaciones": 6,
+		"estacionamientos": 4,
+		"banos": 6,
+		"imagen": "ads1",
+		"descripcion": [
+			"Iure iusto ducimus molestias aperiam harum itaque voluptatum, quo culpa a maiores beatae rem obcaecati at neque sed deleniti consequatur laborum vero, soluta alias dolor. Ipsum unde voluptas dolores corporis maxime explicabo neque, sint facere ut, mollitia soluta sapiente repellat quibusdam distinctio eum asperiores voluptates rem numquam est possimus at adipisci placeat quaerat deserunt.",
+			"Blanditiis tempore fugit voluptatibus vero itaque, omnis iure libero quae accusantium reprehenderit officiis inventore dolorum ratione aperiam quod enim quis eius explicabo natus repellat voluptatum. Provident omnis nostrum nemo laborum similique. Consequatur.",
+			"Non optio tempore nisi dolores consequatur, illo veritatis voluptates inventore id, doloremque officiis? Suscipit laudantium rerum dolores dolor excepturi asperiores, aut sit itaque. Atque, nemo. Iste rerum repudiandae, praesentium soluta a dicta expedita? Enim adipisci commodi repellendus, tenetur pariatur possimus?"
+		]
+	},
+	{
+		"id": 2,
+		"titulo": "Casona Victoriana",
+		"subtitulo": "Casona de lujo, con inigualable diseño victoriano, a un precio increible.",
+		"precio": "$4.500.000",
+		"habitaciones": 8,
+		"estacionamientos": 4,
+		"banos": 6,
+		"imagen": "ads2",
+		"descripcion": [
+			"Esta magnífica casona victoriana combina la elegancia clásica con comodidades modernas. Sus amplios espacios interiores están decorados con molduras originales, pisos de madera nobles y techos altos que evocan la grandeza de una época pasada. Cada habitación ha sido cuidadosamente restaurada para preservar su encanto histórico.",
+			"El jardín principal ofrece un espacio verde exuberante con senderos de piedra y áreas de estar perfectas para reuniones familiares. La cocina ha sido modernizada con electrodomésticos de última generación mientras mantiene su estética tradicional con gabinetes de madera tallada a mano.",
+			"Ubicada en una de las zonas más exclusivas de la ciudad, esta propiedad representa una oportunidad única para adquirir un pedazo de historia arquitectónica. Los acabados de lujo y la atención al detalle en cada rincón hacen de esta casona un verdadero tesoro inmobiliario."
+		]
+	},
+	{
+		"id": 3,
+		"titulo": "Típica Casa Country",
+		"subtitulo": "Casa tipo country de lujo, con acabados de primera, casi un regalo.",
+		"precio": "$2.000.000",
+		"habitaciones": 4,
+		"estacionamientos": 2,
+		"banos": 4,
+		"imagen": "ads3",
+		"descripcion": [
+			"Encantadora casa de estilo country que evoca la calidez del campo con todas las comodidades modernas. Sus amplios porches ofrecen vistas panorámicas a los alrededores, mientras que el interior destaca por sus acabados en madera natural y piedra. Perfecta para quienes buscan tranquilidad sin renunciar al confort.",
+			"El diseño abierto de la sala principal conecta elegantemente con el comedor y la cocina, creando un espacio ideal para la vida familiar. Las habitaciones son espaciosas y cuentan con grandes ventanales que permiten la entrada abundante de luz natural durante todo el día.",
+			"Esta propiedad incluye un extenso terreno con áreas verdes maduras, ideal para jardinería o actividades al aire libre. Su ubicación privilegiada ofrece fácil acceso a servicios esenciales mientras mantiene la privacidad y serenidad que caracteriza a las casas de campo."
+		]
+	},
+	{
+		"id": 4,
+		"titulo": "Casa con Piscina",
+		"subtitulo": "Lujosa casa de diseño moderno con preciosa piscina, en la mejor zona.",
+		"precio": "$3.500.000",
+		"habitaciones": 5,
+		"estacionamientos": 3,
+		"banos": 5,
+		"imagen": "ads4",
+		"descripcion": [
+			"Impresionante casa de diseño contemporáneo que destaca por su piscina infinita con vista al horizonte. Los espacios interiores están concebidos con un concepto abierto que maximiza la integración entre el área social y los exteriores, con ventanales de piso a techo que inundan cada estancia de luz natural.",
+			"La zona de la piscina cuenta con terraza de madera, área de BBQ techada y un jardín tropical que crea un oasis privado en plena ciudad. El diseño paisajístico ha sido cuidadosamente planificado para ofrecer privacidad y belleza en cada rincón del exterior.",
+			"Interiormente, cada detalle ha sido seleccionado con los más altos estándares de calidad: pisos de porcelanato, cocina gourmet con isla central, y un sistema domótico que permite controlar iluminación, clima y seguridad desde cualquier dispositivo. Una propiedad que define el lujo moderno."
+		]
+	},
+	{
+		"id": 5,
+		"titulo": "Casona de Campo",
+		"subtitulo": "Hermosa casa de campo ideal para familia numerosa en zona privilegiada.",
+		"precio": "$2.500.000",
+		"habitaciones": 7,
+		"estacionamientos": 2,
+		"banos": 5,
+		"imagen": "ads5",
+		"descripcion": [
+			"Espléndida casona de campo que ofrece el equilibrio perfecto entre rusticidad y elegancia. Con siete amplias habitaciones, esta propiedad está diseñada para familias que valoran el espacio y la comodidad. Los materiales de construcción naturales como la piedra y la madera le confieren un carácter único e irrepetible.",
+			"Los jardines que rodean la propiedad se extienden por hectáreas de terreno con árboles frutales, áreas de cultivo y espacios recreativos. Un arroyo natural atraviesa la parte posterior del terreno, añadiendo un toque de serenidad y conexión con la naturaleza que difícilmente se encuentra en otros inmuebles.",
+			"La zona interior cuenta con una cocina de grandes dimensiones, comedor familiar, sala de estar con chimenea y una biblioteca privada. Los acabados mantienen la esencia campestre con todas las comodidades del siglo XXI, incluyendo paneles solares y sistema de recolección de agua pluvial."
+		]
+	},
+	{
+		"id": 6,
+		"titulo": "Residencia de Lujo",
+		"subtitulo": "Hermosa residencia de lujo al borde de canales, en zona exclusiva.",
+		"precio": "$5.000.000",
+		"habitaciones": 9,
+		"estacionamientos": 5,
+		"banos": 8,
+		"imagen": "ads6",
+		"descripcion": [
+			"La residencia más exclusiva del portafolio, ubicada en una posición privilegiada al borde de canales navegables. Esta propiedad de nueve habitaciones representa la cúspide del lujo inmobiliario, con acabados importados, sistemas de automatización de última generación y un diseño arquitectónico que se integra armoniosamente con el paisaje acuático.",
+			"El muelle privado permite el atraque de embarcaciones de recreo, mientras que la piscina infinity y el spa exterior ofrecen vistas incomparables al atardecer sobre el agua. Cada habitación cuenta con baño en suite y terraza privada, garantizando la máxima comodidad y privacidad para todos los residentes.",
+			"Los espacios comunes incluyen una sala de cine privada, gimnasio equipado, bodega climatizada para vinos y una terraza panorámica en el último nivel. La seguridad es las 24 horas con sistema de vigilancia avanzado. Esta propiedad no es solo una casa, es un estilo de vida sin igual."
+		]
+	}
+]
