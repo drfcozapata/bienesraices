@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="Francisco Zapata" />
 		<title>Propiedad</title>
-		<link rel="stylesheet" href="build/css/app.css" />
+		<link rel="stylesheet" href="css/app.css" />
 	</head>
 
 	<body>
@@ -13,7 +13,7 @@
 			<div class="container header-content">
 				<div class="navbar">
 					<a href="/"
-						><img src="./build/img/logo.svg" alt="Logo de F&A Bienes Raíces"
+						><img src="./img/logo.svg" alt="Logo de F&A Bienes Raíces"
 					/></a>
 					<nav class="navegation">
 						<a href="about.html">Nosotros</a>
@@ -38,15 +38,15 @@
 			<p id="prop-precio" class="price" style="font-weight: 700; font-size: 2.25rem;"></p>
 			<ul class="icons-features" style="display: flex; gap: 2rem; list-style: none; padding: 0; margin: 1.5rem 0; justify-content: center;">
 				<li style="display: flex; align-items: center;">
-					<img loading="lazy" src="build/img/icon4.svg" alt="Icono habitaciones" />
+					<img loading="lazy" src="img/icon4.svg" alt="Icono habitaciones" />
 					<p id="prop-habitaciones"></p>
 				</li>
 				<li style="display: flex; align-items: center;">
-					<img loading="lazy" src="build/img/icon5.svg" alt="Icono estacionamiento" />
+					<img loading="lazy" src="img/icon5.svg" alt="Icono estacionamiento" />
 					<p id="prop-estacionamientos"></p>
 				</li>
 				<li style="display: flex; align-items: center;">
-					<img loading="lazy" src="build/img/icon6.svg" alt="Icono WC" />
+					<img loading="lazy" src="img/icon6.svg" alt="Icono WC" />
 					<p id="prop-banos"></p>
 				</li>
 			</ul>
@@ -78,7 +78,7 @@
 					return;
 				}
 
-				fetch('build/js/properties.json')
+				fetch('js/properties.json')
 					.then(function (response) {
 						return response.json();
 					})
@@ -101,7 +101,7 @@
 						document.getElementById('prop-estacionamientos').textContent = propiedad.estacionamientos;
 						document.getElementById('prop-banos').textContent = propiedad.banos;
 
-						var imgPath = 'build/img/' + propiedad.imagen;
+						var imgPath = 'img/' + propiedad.imagen;
 						document.getElementById('src-webp').srcset = imgPath + '.webp';
 						document.getElementById('src-jpg').srcset = imgPath + '.jpg';
 						document.getElementById('prop-imagen').src = imgPath + '.jpg';
