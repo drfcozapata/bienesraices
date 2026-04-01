@@ -53,5 +53,9 @@ function watchArchivos() {
 	watch(paths.imagenes, imagenes);
 }
 
+function copyHtml() {
+	return src('./*.html', { base: '.' }).pipe(dest('./build'));
+}
+
 exports.default = parallel(css, javascript, imagenes, watchArchivos);
-exports.build = parallel(css, javascript, imagenes);
+exports.build = parallel(css, javascript, imagenes, copyHtml);

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Francisco Zapata" />
+		<title>Propiedad</title>
+		<link rel="stylesheet" href="build/css/app.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container header-content">
+				<div class="navbar">
+					<a href="/"
+						><img src="./build/img/logo.svg" alt="Logo de F&A Bienes Raíces"
+					/></a>
+					<nav class="navegation">
+						<a href="about.html">Nosotros</a>
+						<a href="ads.html">Anuncios</a>
+						<a href="blog.html">Blog</a>
+						<a href="contact.html">Contacto</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="container section announce" style="margin-bottom: 80px;">
+			<h2 id="prop-titulo"></h2>
+			<p id="prop-subtitulo" class="subtitle"></p>
+			<div class="image">
+				<picture style="border-radius: 25px;">
+					<source id="src-webp" srcset="" type="image/webp" />
+					<source id="src-jpg" srcset="" type="image/jpeg" />
+					<img id="prop-imagen" src="" alt="" loading="lazy" style="border-radius: 20px;" />
+				</picture>
+			</div>
+			<p id="prop-precio" class="price" style="font-weight: 700; font-size: 2.25rem;"></p>
+			<ul class="icons-features" style="display: flex; gap: 2rem; list-style: none; padding: 0; margin: 1.5rem 0; justify-content: center;">
+				<li style="display: flex; align-items: center;">
+					<img loading="lazy" src="build/img/icon4.svg" alt="Icono habitaciones" />
+					<p id="prop-habitaciones"></p>
+				</li>
+				<li style="display: flex; align-items: center;">
+					<img loading="lazy" src="build/img/icon5.svg" alt="Icono estacionamiento" />
+					<p id="prop-estacionamientos"></p>
+				</li>
+				<li style="display: flex; align-items: center;">
+					<img loading="lazy" src="build/img/icon6.svg" alt="Icono WC" />
+					<p id="prop-banos"></p>
+				</li>
+			</ul>
+			<div id="prop-descripcion"></div>
+		</main>
+
+		<footer class="footer section">
+			<div class="container footer-container">
+				<nav class="navegation">
+					<a href="about.html">Nosotros</a>
+					<a href="ads.html">Anuncios</a>
+					<a href="blog.html">Blog</a>
+					<a href="contact.html">Contacto</a>
+				</nav>
+				<p class="copyright">
+					Todos los derechos reservados. &copy; 2023 by Francisco Zapata
+				</p>
+			</div>
+		</footer>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const params = new URLSearchParams(window.location.search);
+				const id = parseInt(params.get('id'));
+
+				if (!id) {
+					document.querySelector('.announce').innerHTML =
+						'<h2>Propiedad no encontrada</h2><p>No se ha especificado una propiedad válida.</p>';
+					return;
+				}
+
+				fetch('build/js/properties.json')
+					.then(function (response) {
+						return response.json();
+					})
+					.then(function (propiedades) {
+						var propiedad = propiedades.find(function (p) {
+							return p.id === id;
+						});
+
+						if (!propiedad) {
+							document.querySelector('.announce').innerHTML =
+								'<h2>Propiedad no encontrada</h2><p>La propiedad solicitada no existe.</p>';
+							return;
+						}
+
+						document.title = propiedad.titulo + ' - Bienes Raíces';
+						document.getElementById('prop-titulo').textContent = propiedad.titulo;
+						document.getElementById('prop-subtitulo').textContent = propiedad.subtitulo;
+						document.getElementById('prop-precio').textContent = propiedad.precio;
+						document.getElementById('prop-habitaciones').textContent = propiedad.habitaciones;
+						document.getElementById('prop-estacionamientos').textContent = propiedad.estacionamientos;
+						document.getElementById('prop-banos').textContent = propiedad.banos;
+
+						var imgPath = 'build/img/' + propiedad.imagen;
+						document.getElementById('src-webp').srcset = imgPath + '.webp';
+						document.getElementById('src-jpg').srcset = imgPath + '.jpg';
+						document.getElementById('prop-imagen').src = imgPath + '.jpg';
+						document.getElementById('prop-imagen').alt = propiedad.titulo;
+
+						var descContainer = document.getElementById('prop-descripcion');
+						propiedad.descripcion.forEach(function (parrafo) {
+							var p = document.createElement('p');
+							p.textContent = parrafo;
+							descContainer.appendChild(p);
+						});
+					})
+					.catch(function () {
+						document.querySelector('.announce').innerHTML =
+							'<h2>Error</h2><p>No se pudo cargar la información de la propiedad.</p>';
+					});
+			});
+		</script>
+	</body>
+</html>
